@@ -9,3 +9,6 @@ write smth about me in README file
 SUCCESS
 new 24.10.2021   22:38
 SUCCESS
+SUCCESS
+hw_1 try
+finally SUCCESS
