@@ -1,0 +1,155 @@
+html,body {
+    height: 100%;
+    margin: 0;
+}
+
+body
+    {background: url(fon2.jpg); 
+    background-attachment: fixed;
+    background-size: cover;
+    margin, padding: 0;}
+
+.container
+    {padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;}
+
+ul.menu1 li
+{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
+.menu1{
+    background-color: firebrick;
+    display: flex;
+    margin-top: 10;
+    padding: 0;
+    text-align: center;
+}
+a#one
+{
+    color: white;
+    font-size: 25px; 
+    font-family: 'Futura-Normal', arial;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 15px;  
+    display: block;}
+
+
+a#one:hover
+{background-color: darkred;}
+
+a#two:hover{
+    background-color: darkred}
+
+.item active
+    {align-content: center;}
+
+p1
+    {text-align: center;
+    font-family: 'DS Eraser Cyr', bold;
+    font-size: 68px;
+    text-shadow: 4px 4px 4px #aaa;}
+p2
+    {text-align: center;
+    font-family: 'DS Eraser Cyr', bold;
+    font-size: 45px;
+    text-shadow: 4px 4px 4px #aaa;}
+
+.citata
+{
+    color:black;
+    margin-bottom: 0px;
+    padding-left:400;
+    justify-content: flex-end;
+    border: 1 px solid darkred;
+    text-align: left;
+    font-size: 30px;
+    font-family: 'Annabelle', arial;
+    
+}
+
+q
+    {text-align: left;
+    padding: 3px;}
+
+.two 
+    {background-color: white;
+        background: url(text.jpg);
+    color:firebrick;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    padding: 5px;
+    align-content: center;}
+
+    p#p2
+    {   text-align: center;
+        font-family: 'DS Eraser Cyr', bold;
+        font-size: 50px;
+        text-shadow: 4px 4px 4px #aaa;}
+    
+    p{text-align: center;}
+
+    p#p1
+    {text-align: center;
+    font-family: 'DS Eraser Cyr', bold;
+    font-size: 68px;
+    text-shadow: 4px 4px 4px #aaa;}
+
+    p#p3{text-align: center;
+        font-size: 24;
+        padding:0px;}
+
+
+.sticky-top
+    {position: sticky;}
+
+.bottom
+    {background-color: #FDE640;}
+blockquote {
+    margin: 0;
+    background: white;
+    border: 15px solid #FDE640;
+    border-radius: 8px;
+    text-align: center;
+    color: #58554B;
+    padding: 30px 50px;
+    font-family: 'Lato', sans-serif;}
+
+blockquote p {
+    margin-top: 0;
+    font-size: 22px;
+    line-height: 1.25;}
+
+blockquote span {
+    background: #FDE640;
+    box-shadow: -20px 0 #FDE640, 20px 0 #FDE640;
+    position: relative;
+}
+blockquote span:before {
+    content: "\201C";
+    font-family: serif;
+    position: absolute;
+    font-size: 60px;
+    left: -50px;
+    top: 10px;
+    line-height: 0;}
+
+blockquote span:after {
+    content: "\201D";
+    font-family: serif;
+    position: absolute;
+    font-size: 60px;
+    right: -50px;
+    bottom: -10px;
+    line-height: 0;}
+
+blockquote cite {
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 14px;}
+
