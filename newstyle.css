@@ -1,0 +1,186 @@
+﻿:root {
+    --blue: #1e90ff;
+    --pink: #ffc0cb;
+}
+
+body 
+{
+margin: 0;
+padding: 0;
+width:100%;
+}
+
+.image_header
+{
+    width: 10ex;
+    height: 10ex;
+    float: right;
+}
+
+.image {
+    width: 10ex;
+    height: 10ex;
+
+}
+
+#blind
+{
+    float: right;
+}
+
+#anek
+{
+    font-size: 2rem;
+}
+
+#text_anek
+{
+    font-size: 2em;
+}
+
+
+
+#header {
+    height: calc(100%/2);
+    position: sticky;
+    top: 0;
+    background-color: beige;
+    text-align: center;
+    display: block;
+}
+
+#cat_image {
+
+    display: block;
+    position: relative;
+    top:70px;
+    left: 500px;
+}
+
+
+nav
+{
+    padding: 5em;
+    margin: 5ex;
+    background-color: blanchedalmond;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+header > h4
+{
+    font-family: 'Comic Sans MS';
+    font-size: 20px;
+    color: mediumspringgreen;
+    text-align: center;
+}
+
+header p 
+{
+    font-family: 'Times New Roman', Times, serif;
+    font-variant-caps: petite-caps;
+    text-shadow: 20px 10px 10px red;
+}
+
+
+footer p
+{
+    font-family:Candara;
+    font-weight: 900;
+    font-size: 20px;
+    color:mediumblue;
+}
+
+a:link
+{
+    color:chartreuse;
+}
+
+a:visited {
+    color: deeppink;
+}
+
+a:active
+{
+    color:forestgreen;
+}
+
+#sect_1
+{
+    width: 70%;
+    background-color:silver;
+    text-align: center;
+    font-style: oblique;
+    margin: 0px;
+    padding: 15px;
+    float:left;
+}
+
+#sect_2 
+{
+    width: 100%;
+    background-color: midnightblue;
+    text-align: center;
+    color:aliceblue;
+    font-style: oblique;
+    padding: 0px;
+}
+
+.cls_1
+{
+    background-color:coral;
+    color:floralwhite;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    display: inherit;
+}
+
+table 
+{
+    background-color: coral;
+    color: floralwhite;
+    text-align: center;
+    table-layout:auto;
+    border-collapse:separate;
+    border: 5px double floralwhite;
+    width: 100%;
+    display:inline-table;
+}
+
+th {
+    border: 1px dashed floralwhite;
+}
+
+.cls_2 
+{
+    text-transform: uppercase;
+    text-decoration-style:dotted;
+    text-shadow: 1cm 5px 5px yellow;
+}
+
+li
+{
+    list-style-position: outside;
+    text-align: left;
+}
+
+
+
+p::before
+{
+    content: "Вау, что-то впереди";
+    background-color:aqua;
+}
+
+p::after {
+    content: "Вау, что-то сзади! НО ЕСТЬ ОДИН НЮАНС...";
+    background-color: dodgerblue;
+}
+
+.main-footer
+{
+    background-color: var(--pink);
+}
+
+
