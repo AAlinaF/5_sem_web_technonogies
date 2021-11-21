@@ -116,8 +116,11 @@ class dop
 
     #maxInt = 65535;
 
-
+get(value)
+    {console.log("ыыыы", this.#maxInt); }
 }
+
+
 
 let test = new dop(5, 9); //уже не zero
 
@@ -140,7 +143,7 @@ console.log(test.zero);
 console.log(test._zero);
 
 
-test.#maxInt = 0;
+//test.#maxInt = 0;
 
 let message = 
 {
@@ -153,6 +156,10 @@ let message =
 Object.assign(dop.prototype, message);
 
 new dop(8, 7).try();
+
+console.log("Используем приватку, онли для фанов, так сказатб");
+test.get(8);
+console.log("Ура, получилось!");
 
 
 
