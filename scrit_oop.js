@@ -140,7 +140,7 @@ console.log(test.zero);
 console.log(test._zero);
 
 
-//test.#maxInt = 0;
+test.#maxInt = 0;
 
 let message = 
 {
