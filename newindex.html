@@ -183,12 +183,6 @@
             });
         
         
-            let listen = function(event) 
-            {
-                print("А что это ты такое кушаешь???? А, это же контент, созданный для этой странички!!!"); //не побоюсь использовать принт, ибо все рвно удаляю событие :)
-            }
-            document.body.addEventListener('click', listen, false); 
-            document.body.removeEventListener('click', listen, false); //добавили и сразу делитнули
         
             let tabl = document.querySelector("ul");
             
@@ -205,6 +199,12 @@
                 li[i].onmouseup = playaudio;
             }
 
+
+            let h4 = document.getElementsByTagName("h4");
+
+            h4.addEventListener("mouseup", playaudio, false);
+            h4.removeEventListener("mouseup", playaudio, false);
+        
 
             tabl.onclick = function(event)
             {
