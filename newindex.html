@@ -70,7 +70,7 @@
 
                     <p>Немного информации о настоящих русских:</p>
                     <ol>
-                        <li>Коты это здорово</li>
+                        <li id="li_id">Коты это здорово</li>
                         <li>Коты это круто</li>
                         <li>Коты полезны для здоровья</li>
                         <li>...</li>
@@ -119,6 +119,8 @@
                     </form>
                 </aside>
             </article>
+
+            <audio id="aud"><source src = "victory.mp3"></audio>
         </main>
 
 
@@ -129,6 +131,92 @@
                 <p>ХЫХЫХЫ, кто долистал до сюда, тот молодец!!!</p>
             </details>
         </footer>
+
+
+        <script type="text/javascript">
+        { 
+            let element = document.createElement("p");
+        
+            element.innerHTML = "НИКОГДА ТАКОГО НЕ БЫЛО, И ВОТ ОПЯТЬ...";
+            let sect_1 = document.getElementById("sect_1");
+            sect_1.appendChild(element);        //добавляем в конец сект_1
+        
+        
+            let udal = document.createElement("p");
+        
+            udal.innerHTML = "для удаления";
+            sect_2.appendChild(udal);
+            sect_2.removeChild(udal);
+        
+        
+            for (var i = 0; i < document.body.childNodes.length; i++)
+            {
+                console.log("%d: %s", i, document.body.childNodes[i]);
+                console.log(document.body.childNodes[i].attributes);
+            }
+        
+        
+            console.log ("ну че, народ, погнали, *****");
+        
+            console.log(document.body.lastElementChild);
+            console.log(document.lastChild);
+        
+            console.log(document.getElementById("sect_1").previousElementSibling);
+        
+            let picha = document.createElement("img");
+            picha.src = "durak.jpg";
+            let pic = document.getElementById("sect_1");
+            let roditel = pic.parentNode;
+            roditel.insertBefore(picha, pic.nextSibling);
+        
+            let sel_sect = document.querySelectorAll("section");
+            console.log(sel_sect);
+        
+        
+            let a_side = document.getElementsByTagName("aside");
+            a_side.classList.replace('cls_2', 'cls_1');
+        
+        
+            window.addEventListener('scroll',(event) => 
+            {
+                console.log('ХЫХЫ, прокрутка');
+            });
+        
+        
+        
+            let tabl = document.querySelector("ul");
+            
+
+            let audo = document.getElementById("aud");
+            function playaudio()
+            { 
+                audo.play();
+            }
+
+            var li = document.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++)
+            {
+                li[i].onmouseup = playaudio;
+            }
+
+
+            let h4 = document.getElementsByTagName("h4");
+
+            h4.addEventListener("mouseup", playaudio, false);
+            h4.removeEventListener("mouseup", playaudio, false);
+        
+
+            tabl.onclick = function(event)
+            {
+                 var li_id = document.getElementById("li_id");
+                 li.firstChild.nodeValue = "!!!!!";
+                 console.log("target = " + event.target.tagName + ", this=" + this.tagName);
+            };
+
+
+        }
+        </script>
+
       </body>
     </html>
         
