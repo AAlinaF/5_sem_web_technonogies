@@ -5,6 +5,11 @@ const socket = new WebSocket("ws://localhost:5500");
 				console.log("Соединение с клиентом установлено");
 				socket.send("HHHHHHHHH");
 			};
+
+			socket.onmessage = function(message) {
+				alert("Данные, полученые с сервера:", message.data);
+			};
+
 			socket.onclose = function(event)
 			{
 				if (event.wasClean)
