@@ -110,11 +110,13 @@
                         — Мыл
                         Грузин гасит свечку</p>
 
-                    <form action="1" class="cls_1">
+                    <form name="rofl" method="POST" action="forma.php" class="cls_1">
+                        <p>Введите Ваше имя:</p>
+                        <input name="name" type="text">
                         <p>Понравилось?</p>
-                        <input  type="radio">Да<br>
-                        <input  type="radio">Конечно<br>
-                        <input  type="radio">Несомненно<br>
+                        <input name="ch" type="radio">Да<br>
+                        <input name="ch" type="radio">Конечно<br>
+                        <input name="ch" type="radio">Несомненно<br>
                         <input type="submit" value="Отправить">
                     </form>
                 </aside>
@@ -135,6 +137,7 @@
 
         <script type="text/javascript">
         { 
+            'use strict';
             let element = document.createElement("p");
         
             element.innerHTML = "НИКОГДА ТАКОГО НЕ БЫЛО, И ВОТ ОПЯТЬ...";
@@ -174,7 +177,7 @@
         
         
             let a_side = document.getElementsByTagName("aside");
-            a_side.classList.replace('cls_2', 'cls_1');
+            //a_side.classList.replace('cls_2', 'cls_1');
         
         
             window.addEventListener('scroll',(event) => 
@@ -202,8 +205,8 @@
 
             let h4 = document.getElementsByTagName("h4");
 
-            h4.addEventListener("mouseup", playaudio, false);
-            h4.removeEventListener("mouseup", playaudio, false);
+           // h4.addEventListener("mouseup", playaudio, false);
+            //h4.removeEventListener("mouseup", playaudio, false);
         
 
             tabl.onclick = function(event)
@@ -215,8 +218,19 @@
 
 
         }
+
+
+        let parsim = 
+        {
+            "Head": "headline",
+            "Family": "font",
+            "Ya_pishy": "kakyu-to fignu",
+        };
+
+        fetch('pars.php', {method: "POST", body: JSON.stringify(parsim)})
+            .then((response) => {return response.json();})
+			.then((infa) => {console.log(infa);});
         </script>
 
       </body>
     </html>
-        
