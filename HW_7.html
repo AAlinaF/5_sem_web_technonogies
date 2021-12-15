@@ -59,13 +59,15 @@
 
            <h1>гоп стоп</h1>
            <h1 class="target">меня разнесли по всем фронтам</h1>
-           <h1>шутки закончились, Шеф пришел</h1>
+           <canvas id="shef"></canvas>
 
            <svg height="0">
             <filter id="filter">
               <feGaussianBlur stdDeviation="2"/>
             </filter>
           </svg>
+
+    
 
 
         <script>
@@ -78,6 +80,16 @@
 
             ctx.fillStyle = 'aqua';
             ctx.fillRect(30, 30, 30, 30);
+
+            
+    
+            const fil = document.getElementById('shef');
+            const razm = fil.getContext('2d');
+            razm.font = '20px solid';
+            razm.filter = 'blur(1px)';
+            razm.fillText('шутки не будет, Шеф пришел', 10, 10);
+    
+
         </script>
 
     </BODY>
